@@ -1,0 +1,5 @@
+services:
+  ci-cd:
+    build: ../
+    ports:
+      - 8080:8080
