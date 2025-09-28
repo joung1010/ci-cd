@@ -1,0 +1,15 @@
+name: Github Actions Test
+
+on:
+  push:
+    branches:
+      - main
+
+
+jobs:
+  My-Deloy-Jobs:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Hello World
+        run: echo "Hello World"
