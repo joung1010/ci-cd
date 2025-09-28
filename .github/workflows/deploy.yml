@@ -13,7 +13,11 @@ jobs:
     steps:
       - name: Hello World
         run: echo "Hello World"
-      - name: Step check1
+      - name: Step check1( 여러 명령어작성)
         run: |
           echo "Good"
           echo "Hello"
+      - name: Step check2(자체에 저장되어 있는 변수 확인)
+        run: |
+          echo $GITHUB_SHA
+          echo $GITHUB_REPOSITORY
